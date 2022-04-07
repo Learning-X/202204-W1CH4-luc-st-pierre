@@ -1,3 +1,8 @@
+:root {
+  --bg-navbar-blue: #5e81d1;
+  --txt-black: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,4 +18,35 @@ ul {
 
 html {
   font-family: "Nunito", sans-serif;
+}
+
+.navbar {
+  height: 150px;
+  background-color: var(--bg-navbar-blue);
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__title {
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.navbar__lists {
+  display: flex;
+}
+
+.navbar__links {
+  color: var(--txt-black);
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.navbar__links.active {
+  font-weight: 600;
 }
