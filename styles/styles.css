@@ -1,5 +1,6 @@
 :root {
   --bg-navbar-blue: #5e81d1;
+  --bg-comprados-orange: #f87500;
   --txt-black: #000;
 }
 
@@ -49,4 +50,23 @@ html {
 
 .navbar__links.active {
   font-weight: 600;
+}
+
+.comprados {
+  height: 105px;
+  padding: 0 1.5rem;
+  background-color: var(--bg-comprados-orange);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comprados h2 {
+  font-weight: 100;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+}
+
+.fa-plus-circle {
+  font-size: 2.8rem;
 }
