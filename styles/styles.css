@@ -1,7 +1,9 @@
 :root {
   --bg-navbar-blue: #5e81d1;
   --bg-comprados-orange: #f87500;
+  --bg-white: #fff;
   --txt-black: #000;
+  --border-black: #000;
 }
 
 * {
@@ -19,6 +21,10 @@ ul {
 
 html {
   font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #ff8d27;
 }
 
 .navbar {
@@ -62,11 +68,75 @@ html {
 }
 
 .comprados h2 {
-  font-weight: 100;
+  font-weight: 200;
   font-size: 1.9rem;
   letter-spacing: 1px;
 }
 
 .fa-plus-circle {
   font-size: 2.8rem;
+}
+
+/* ITEMS LIST */
+.items {
+  padding: 2rem 1.5rem;
+}
+
+.article__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.item__name {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.article__item-label {
+  position: absolute;
+  inset: 0;
+}
+
+.article__item-checkbox {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.article__item-span-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+}
+
+.article__item-name {
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding-left: 1rem;
+}
+
+.article__item-checkbox:checked ~ span.article__item-name {
+  text-decoration: line-through;
+}
+
+.item__price {
+  display: flex;
+  align-items: center;
+}
+
+.item__price-price {
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-right: 5rem;
+}
+
+.fa-times {
+  font-size: 2.2rem;
+  padding-top: 0.6rem;
+  cursor: pointer;
 }
