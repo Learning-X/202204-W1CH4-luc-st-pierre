@@ -39,6 +39,31 @@
 
     <section class="form">
       <h2 class="form__title">Editar artículo</h2>
+
+      <form class="form-article">
+        <div class="container">
+          <div class="form-article__name">
+            <label class="form-article__label" for="article-text"
+              >Nombre:</label
+            >
+            <input type="text" id="article-text" />
+          </div>
+
+          <div class="form-article__price">
+            <label class="form-article__label" for="article-text"
+              >Precio:</label
+            >
+            <div class="container-currency">
+              <div>
+                <input class="input-currency" type="text" id="article-text" />
+              </div>
+              <span class="form-article__currency">€</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="form-article__button">Modificar</button>
+      </form>
     </section>
   </body>
 </html>

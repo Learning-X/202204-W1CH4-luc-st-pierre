@@ -152,3 +152,71 @@ body {
   font-size: 1.9rem;
   letter-spacing: 1px;
 }
+
+.form-article {
+  margin-top: 1rem;
+}
+
+.form-article__name {
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+}
+
+.form-article__price {
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+}
+
+.form-article__label {
+  font-weight: 200;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.form-article__name label,
+.form-article__price label {
+  padding-bottom: 15px;
+}
+
+.form-article__name:last-of-type,
+.form-article__price:last-of-type {
+  margin-top: 1.5rem;
+}
+
+[type="text"] {
+  height: 3rem;
+}
+
+.form-article__button {
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-top: 1.5rem;
+  padding: 1rem 0.4rem;
+  color: var(--bg-white);
+  background-color: #5d82d1;
+  border: 1px solid #5d82d1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-currency {
+  width: 300px;
+}
+
+.container-currency {
+  display: flex;
+  width: 300px;
+}
+
+.form-article__currency {
+  align-self: center;
+  margin-left: 0.4rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
