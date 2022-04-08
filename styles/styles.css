@@ -4,6 +4,7 @@
   --bg-white: #fff;
   --txt-black: #000;
   --border-black: #000;
+  --border-white: #fff;
 }
 
 * {
@@ -81,6 +82,13 @@ body {
 /* ITEMS LIST */
 .items {
   padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.article__list {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-white);
 }
 
 .article__item {
@@ -89,6 +97,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
+}
+
+.article__list--price {
+  align-self: flex-end;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 200;
 }
 
 .item__name {
