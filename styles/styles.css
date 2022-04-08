@@ -68,7 +68,7 @@ body {
   align-items: center;
 }
 
-.comprados h2 {
+.comprados span {
   font-weight: 200;
   font-size: 1.9rem;
   letter-spacing: 1px;
